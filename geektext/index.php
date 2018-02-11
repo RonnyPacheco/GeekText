@@ -17,28 +17,23 @@
 		<a href="#top_sellers">Top Sellers</a>
 		<a href="genres.php">Genres</a>
 		<a >Contact Us</a>
-		
-		<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-			
-			
-			<input type="text" placeholder="Search.." name="search"></input>
+
+		<form  method="get" class="example" action="result.php" style="margin:auto;max-width:300px">
+			<input type="text" placeholder="Search..." name="user_query"></input>
+			<input type="submit" name="search" value="Search" style="float: right;"/>
 			<div style="clear:both;"></div>
-			
-		
-			
-			
-			
+
 		</form>
-		
+
 	</div>
 
 	<div class="content" >
-	
+
 		<div id="book_container">
 			<?php getBook(); ?>
 
 		</div>
-		
+
 	</div>
 
 </body>
